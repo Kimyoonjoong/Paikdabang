@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>빽다방</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/import.css" />
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="#"><img src="./images/logo.png" alt="로고이미지" /></a>
+      </h1>
+      <nav>
+        <button class="nav-btn">
+          <img src="./images/ham.png" alt="햄버거 아이콘" />
+        </button>
+        <ul class="nav-bar">
+          <button class="navbar-btn">
+            <img src="./images/close.png" alt="닫기 아이콘" />
+          </button>
+          <li class="nav-bar-li">
+            <a href="#">빽다방</a>
+            <ul class="sub-bar">
+              <li><a href="#">CEO 인사말</a></li>
+              <li><a href="#">빽다방 소개</a></li>
+              <li><a href="#">커피 이야기</a></li>
+              <li><a href="#">교육 이야기</a></li>
+            </ul>
+          </li>
+          <li class="nav-bar-li">
+            <a href="#">메뉴</a>
+            <ul class="sub-bar">
+              <li><a href="#">신메뉴</a></li>
+              <li><a href="#">커피</a></li>
+              <li><a href="#">음료</a></li>
+              <li><a href="#">아이스크림/디저트</a></li>
+              <li><a href="#">빽스치노</a></li>
+            </ul>
+          </li>
+          <li class="nav-bar-li">
+            <a href="#">소식</a>
+            <ul class="sub-bar">
+              <li><a href="#">소식</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">친절 우수매장</a></li>
+            </ul>
+          </li>
+          <li class="nav-bar-li">
+            <a href="#">커뮤니티</a>
+            <ul class="sub-bar">
+              <li><a href="#">커피 클래스</a></li>
+            </ul>
+          </li>
+          <li class="nav-bar-li">
+            <a href="#">매장안내</a>
+            <ul class="sub-bar">
+              <li><a href="#">매장찾기</a></li>
+            </ul>
+          </li>
+          <li class="nav-bar-li">
+            <a href="#">창업안내</a>
+            <ul class="sub-bar">
+              <li><a href="#">왜 빽다방인가요?</a></li>
+              <li><a href="#">창업상담 신청</a></li>
+              <li><a href="#">창업절차 및 조건</a></li>
+              <li><a href="#">인테리어</a></li>
+            </ul>
+          </li>
+          <li class="nav-bar-li"><a href="#">고객의 소리</a></li>
+        </ul>
+        <ul class="m-nav-bar">
+          <button class="m-navbar-btn">
+            <img src="./images/close.png" alt="닫기 아이콘" />
+          </button>
+          <li>
+            <a href="#">빽다방</a>
+            <ul class="m-sub-bar">
+              <li><a href="#">CEO 인사말</a></li>
+              <li><a href="#">빽다방 소개</a></li>
+              <li><a href="#">커피 이야기</a></li>
+              <li><a href="#">교육 이야기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">메뉴</a>
+            <ul class="m-sub-bar">
+              <li><a href="#">신메뉴</a></li>
+              <li><a href="#">커피</a></li>
+              <li><a href="#">음료</a></li>
+              <li><a href="#">아이스크림/디저트</a></li>
+              <li><a href="#">빽스치노</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">소식</a>
+            <ul class="m-sub-bar">
+              <li><a href="#">소식</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">친절 우수매장</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">커뮤니티</a>
+            <ul class="m-sub-bar">
+              <li><a href="#">커피 클래스</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">매장안내</a>
+            <ul class="m-sub-bar">
+              <li><a href="#">매장찾기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">창업안내</a>
+            <ul class="m-sub-bar">
+              <li><a href="#">왜 빽다방인가요?</a></li>
+              <li><a href="#">창업상담 신청</a></li>
+              <li><a href="#">창업절차 및 조건</a></li>
+              <li><a href="#">인테리어</a></li>
+            </ul>
+          </li>
+          <li><a href="#">고객의 소리</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="fullpage">
+      <section id="main" class="section">
+        <p class="ani-wheel">스크롤을 내리세요!</p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide m-slide01">
+              <a href="#"
+                ><img
+                  src="./images/mainbanner-01.jpg"
+                  alt="그래놀라스모어쿠키"
+              /></a>
+            </div>
+            <div class="swiper-slide m-slide02">
+              <a href="#"
+                ><img
+                  src="./images/mainbanner-02.jpg"
+                  alt="허니퐁크러쉬"
+              /></a>
+            </div>
+          
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section id="menu" class="section">
+        <div class="menu-inner">
+          <h2>빽다방 추천메뉴</h2>
+          <div class="swiper mySwiper1">
+            <div class="menu-wrapper swiper-wrapper">
+              <div class="swiper-slide">
+                <ul class="menu-slide">
+                  <li class="new-menu">
+                    <a href="#">
+                      <img
+                        src="./images/icecrush_orange-450x588.png"
+                        alt="신메뉴-아이스크러시-오렌지"
+                      />
+                      아이스크러시 오렌지
+                    </a>
+                    <div class="menu-information">
+                      <img class="information-close" src="./images/close.png" alt="닫기아이콘">
+                      <strong>아이스크러시 오렌지</strong>
+                      <p>
+                        잘게 부서진 얼음으로 더욱 시원하게 즐기는 오렌지맛 음료
+                      </p>
+                      <p>1회 제공량 기준 : 675ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>0</li>
+                          <li>나트륨(mg)</li>
+                          <li>126</li>
+                          <li>포화지방(g)</li>
+                          <li>0</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>441</li>
+                          <li>당류(g)</li>
+                          <li>102</li>
+                          <li>단백질(g)</li>
+                          <li>1</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                  <li class="new-menu">
+                    <a href="#">
+                      <img
+                        src="./images/icecrush_pine-450x588.png"
+                        alt="신메뉴-아이스크러시-파인애플"
+                      />
+                      아이스크러시 파인애플
+                    </a>
+                    <div class="menu-information">
+                      <img class="information-close" src="./images/close.png" alt="닫기아이콘">
+                      <strong>아이스크러시 파인애플</strong>
+                      <p>
+                        잘게 부서진 얼음으로 더욱 시원하게 즐기는 파인애플맛
+                        음료
+                      </p>
+                      <p>1회 제공량 기준 : 675ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>0</li>
+                          <li>나트륨(mg)</li>
+                          <li>102</li>
+                          <li>포화지방(g)</li>
+                          <li>0</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>384</li>
+                          <li>당류(g)</li>
+                          <li>94</li>
+                          <li>단백질(g)</li>
+                          <li>1</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                  <li class="new-menu">
+                    <a href="#">
+                      <img
+                        src="./images/icecrush_melon-450x588.png"
+                        alt="신메뉴-아이스크러시-멜론"
+                      />
+                      아이스크러시 멜론
+                    </a>
+                    <div class="menu-information">
+                      <img class="information-close" src="./images/close.png" alt="닫기아이콘">
+                      <strong>아이스크러시 멜론</strong>
+                      <p>
+                        잘게 부서진 얼음으로 더욱 시원하게 즐기는 멜론맛 음료
+                      </p>
+                      <p>1회 제공량 기준 : 675ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>0</li>
+                          <li>나트륨(mg)</li>
+                          <li>51</li>
+                          <li>포화지방(g)</li>
+                          <li>0</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>349</li>
+                          <li>당류(g)</li>
+                          <li>80</li>
+                          <li>단백질(g)</li>
+                          <li>0.5</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                  <li class="new-menu">
+                    <a href="#"
+                      ><img
+                        src="./images/icecrush_coke-450x588.png"
+                        alt="신메뉴-아이스크러시-콜라"
+                      />
+                      아이스크러시 콜라</a
+                    >
+                    <div class="menu-information">
+                      <img class="information-close" src="./images/close.png" alt="닫기아이콘">
+                      <strong>아이스크러시 콜라</strong>
+                      <p>
+                        잘게 부서진 얼음으로 더욱 시원하게 즐기는 콜라맛 음료
+                      </p>
+                      <p>1회 제공량 기준 : 675ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>0</li>
+                          <li>나트륨(mg)</li>
+                          <li>104</li>
+                          <li>포화지방(g)</li>
+                          <li>0</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>448</li>
+                          <li>당류(g)</li>
+                          <li>104</li>
+                          <li>단백질(g)</li>
+                          <li>1</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="m-menu-slide">
+                  <li class="new-menu">
+                    <a href="#">
+                      <img
+                        src="./images/icecrush_orange-450x588.png"
+                        alt="신메뉴-아이스크러시-오렌지"
+                      />
+                      아이스크러시 오렌지
+                    </a>
+                    <div class="m-menu-information">
+                      <img src="./images/close.png" alt="닫기아이콘">
+                      <strong>아이스크러시 오렌지</strong>
+                      <p>
+                        잘게 부서진 얼음으로 더욱 시원하게 즐기는 오렌지맛 음료
+                      </p>
+                      <p>1회 제공량 기준 : 675ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>0</li>
+                          <li>나트륨(mg)</li>
+                          <li>126</li>
+                          <li>포화지방(g)</li>
+                          <li>0</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>441</li>
+                          <li>당류(g)</li>
+                          <li>102</li>
+                          <li>단백질(g)</li>
+                          <li>1</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                  <li class="new-menu">
+                    <a href="#">
+                      <img
+                        src="./images/icecrush_pine-450x588.png"
+                        alt="신메뉴-아이스크러시-파인애플"
+                      />
+                      아이스크러시 파인애플
+                    </a>
+                    <div class="m-menu-information">
+                      <img src="./images/close.png" alt="닫기아이콘">
+                      <strong>아이스크러시 파인애플</strong>
+                      <p>
+                        잘게 부서진 얼음으로 더욱 시원하게 즐기는 파인애플맛
+                        음료
+                      </p>
+                      <p>1회 제공량 기준 : 675ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>0</li>
+                          <li>나트륨(mg)</li>
+                          <li>102</li>
+                          <li>포화지방(g)</li>
+                          <li>0</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>384</li>
+                          <li>당류(g)</li>
+                          <li>94</li>
+                          <li>단백질(g)</li>
+                          <li>1</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="menu-slide">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./images/ICED-원조커피-450x588.png"
+                        alt="BEST커피-원조커피"
+                      />
+                      원조커피(ICED)</a
+                    >
+                    <div class="menu-information">
+                      <img class="information-close" src="./images/close.png" alt="닫기아이콘">
+                      <strong>원조커피(ICED)</strong>
+                      <p>달콤한 뺵다방 대표메뉴, 믹스커피 종결자!</p>
+                      <p>1회 제공량 기준 : 625ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>371</li>
+                          <li>나트륨(mg)</li>
+                          <li>22</li>
+                          <li>포화지방(g)</li>
+                          <li>12</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>425</li>
+                          <li>당류(g)</li>
+                          <li>48</li>
+                          <li>단백질(g)</li>
+                          <li>3</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./images/아샷추-450x588.png"
+                        alt="BEST커피-아샷추"
+                      />
+                      아이스티샷추가(아샷추)</a
+                    >
+                    <div class="menu-information">
+                      <img class="information-close" src="./images/close.png" alt="닫기아이콘">
+                      <strong>아이스티샷추가(아샷추)</strong>
+                      <p>
+                        별미 중에 별비! 달콤한 복숭아 맛 아이스티에 에스프레소
+                        샷 추가~
+                      </p>
+                      <p>1회 제공량 기준 : 600ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>93</li>
+                          <li>나트륨(mg)</li>
+                          <li>17</li>
+                          <li>포화지방(g)</li>
+                          <li>-</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>265</li>
+                          <li>당류(g)</li>
+                          <li>64</li>
+                          <li>단백질(g)</li>
+                          <li>0.9</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./images/빽s-라떼ICED-450x588.png"
+                        alt="BEST커피-빽S라떼"
+                      />빽's 카페라떼(ICED)</a
+                    >
+                    <div class="menu-information">
+                      <img class="information-close" src="./images/close.png" alt="닫기아이콘">
+                      <strong>빽's 카페라떼(ICED)</strong>
+                      <p>
+                        진한 에스프레소와 우유가 어우려져 탄생한 부드러운 뺵다방
+                        라떼
+                      </p>
+                      <p>1회 제공량 기준 : 625ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>237</li>
+                          <li>나트륨(mg)</li>
+                          <li>81</li>
+                          <li>포화지방(g)</li>
+                          <li>8</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>198</li>
+                          <li>당류(g)</li>
+                          <li>10</li>
+                          <li>단백질(g)</li>
+                          <li>10</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./images/ICED-앗메리카노-450x588.png"
+                        alt="BEST커피-앗메리카노"
+                      />아메리카노(ICED)</a
+                    >
+                    <div class="menu-information">
+                      <img class="information-close" src="./images/close.png" alt="닫기아이콘">
+                      <strong>아메리카노(ICED)</strong>
+                      <p>
+                        빽다방만의 맛과 향을 더한 100% 아라비카 로스팅 원두로
+                        뽑아낸 깊고 진한 아메리카노
+                      </p>
+                      <p>1회 제공량 기준 : 625ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>237</li>
+                          <li>나트륨(mg)</li>
+                          <li>4</li>
+                          <li>포화지방(g)</li>
+                          <li>0</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>13</li>
+                          <li>당류(g)</li>
+                          <li>0</li>
+                          <li>단백질(g)</li>
+                          <li>0</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="m-menu-slide">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./images/ICED-원조커피-450x588.png"
+                        alt="BEST커피-원조커피"
+                      />
+                      원조커피(ICED)</a
+                    >
+                    <div class="m-menu-information">
+                      <img src="./images/close.png" alt="닫기아이콘">
+                      <strong>원조커피(ICED)</strong>
+                      <p>달콤한 뺵다방 대표메뉴, 믹스커피 종결자!</p>
+                      <p>1회 제공량 기준 : 625ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>371</li>
+                          <li>나트륨(mg)</li>
+                          <li>22</li>
+                          <li>포화지방(g)</li>
+                          <li>12</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>425</li>
+                          <li>당류(g)</li>
+                          <li>48</li>
+                          <li>단백질(g)</li>
+                          <li>3</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./images/아샷추-450x588.png"
+                        alt="BEST커피-아샷추"
+                      />
+                      아이스티샷추가(아샷추)</a
+                    >
+                    <div class="m-menu-information">
+                      <img src="./images/close.png" alt="닫기아이콘">
+                      <strong>아이스티샷추가(아샷추)</strong>
+                      <p>
+                        별미 중에 별비! 달콤한 복숭아 맛 아이스티에 에스프레소
+                        샷 추가~
+                      </p>
+                      <p>1회 제공량 기준 : 600ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>93</li>
+                          <li>나트륨(mg)</li>
+                          <li>17</li>
+                          <li>포화지방(g)</li>
+                          <li>-</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>265</li>
+                          <li>당류(g)</li>
+                          <li>64</li>
+                          <li>단백질(g)</li>
+                          <li>0.9</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="menu-slide">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./images/청포도에이드-450x588.png"
+                        alt="BEST음료-청포도에이드"
+                      />청포도에이드</a
+                    >
+                    <div class="menu-information">
+                      <img class="information-close" src="./images/close.png" alt="닫기아이콘">
+                      <strong>청포도에이드</strong>
+                      <p>
+                        청포도의 상큼함과 향긋한 꽃향기가 퍼지는 상큼 달콤한
+                        음료
+                      </p>
+                      <p>1회 제공량 기준 : 600ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>0</li>
+                          <li>나트륨(mg)</li>
+                          <li>8</li>
+                          <li>포화지방(g)</li>
+                          <li>0</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>234</li>
+                          <li>당류(g)</li>
+                          <li>56</li>
+                          <li>단백질(g)</li>
+                          <li>0</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./images/완전토마토-450x588.png"
+                        alt="BEST음료-완전토마토"
+                      />완전토마토</a
+                    >
+                    <div class="menu-information">
+                      <img class="information-close" src="./images/close.png" alt="닫기아이콘">
+                      <strong>완전토마토</strong>
+                      <p>싱그러운 자연의 맛을 그대로 담은 완전토마토</p>
+                      <p>1회 제공량 기준 : 543ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>-</li>
+                          <li>나트륨(mg)</li>
+                          <li>10</li>
+                          <li>포화지방(g)</li>
+                          <li>0</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>159</li>
+                          <li>당류(g)</li>
+                          <li>36</li>
+                          <li>단백질(g)</li>
+                          <li>3</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./images/딸기라떼-450x588.png"
+                        alt="BEST음료-딸기라떼"
+                      />딸기라떼(ICED)</a
+                    >
+                    <div class="menu-information">
+                      <img class="information-close" src="./images/close.png" alt="닫기아이콘">
+                      <strong>딸기라떼(ICED)</strong>
+                      <p>
+                        달콤한 딸기 과육이 가득! 부드럽고 달콤하게 즐기는
+                        딸기라떼
+                      </p>
+                      <p>1회 제공량 기준 : 590ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>-</li>
+                          <li>나트륨(mg)</li>
+                          <li>83</li>
+                          <li>포화지방(g)</li>
+                          <li>5</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>331</li>
+                          <li>당류(g)</li>
+                          <li>54</li>
+                          <li>단백질(g)</li>
+                          <li>8</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./images/바나나라떼ICED-450x588.png"
+                        alt="BEST음료-바나나라떼"
+                      />바나나라떼(ICED)</a
+                    >
+                    <div class="menu-information">
+                      <img class="information-close" src="./images/close.png" alt="닫기아이콘">
+                      <strong>바나나라떼(ICED)</strong>
+                      <p>진한 바나나맛이 올라오는 라떼</p>
+                      <p>1회 제공량 기준 : 611ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>-</li>
+                          <li>나트륨(mg)</li>
+                          <li>154</li>
+                          <li>포화지방(g)</li>
+                          <li>7</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>295</li>
+                          <li>당류(g)</li>
+                          <li>42</li>
+                          <li>단백질(g)</li>
+                          <li>9</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="m-menu-slide">
+                  <li class="new-menu">
+                    <a href="#">
+                      <img
+                        src="./images/icecrush_orange-450x588.png"
+                        alt="신메뉴-아이스크러시-오렌지"
+                      />
+                      아이스크러시 오렌지
+                    </a>
+                    <div class="m-menu-information">
+                      <img src="./images/close.png" alt="닫기아이콘">
+                      <strong>아이스크러시 오렌지</strong>
+                      <p>
+                        잘게 부서진 얼음으로 더욱 시원하게 즐기는 오렌지맛 음료
+                      </p>
+                      <p>1회 제공량 기준 : 675ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>0</li>
+                          <li>나트륨(mg)</li>
+                          <li>126</li>
+                          <li>포화지방(g)</li>
+                          <li>0</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>441</li>
+                          <li>당류(g)</li>
+                          <li>102</li>
+                          <li>단백질(g)</li>
+                          <li>1</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                  <li class="new-menu">
+                    <a href="#">
+                      <img
+                        src="./images/icecrush_pine-450x588.png"
+                        alt="신메뉴-아이스크러시-파인애플"
+                      />
+                      아이스크러시 파인애플
+                    </a>
+                    <div class="m-menu-information">
+                      <img src="./images/close.png" alt="닫기아이콘">
+                      <strong>아이스크러시 파인애플</strong>
+                      <p>
+                        잘게 부서진 얼음으로 더욱 시원하게 즐기는 파인애플맛
+                        음료
+                      </p>
+                      <p>1회 제공량 기준 : 675ml</p>
+                      <div class="menu-table-inner">
+                        <ul class="menu-table-left">
+                          <li>카페인(mg)</li>
+                          <li>0</li>
+                          <li>나트륨(mg)</li>
+                          <li>102</li>
+                          <li>포화지방(g)</li>
+                          <li>0</li>
+                        </ul>
+                        <ul class="menu-table-right">
+                          <li>칼로리(kcal)</li>
+                          <li>384</li>
+                          <li>당류(g)</li>
+                          <li>94</li>
+                          <li>단백질(g)</li>
+                          <li>1</li>
+                        </ul>
+                      </div>
+                      <p>(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <p>
+            지금 바로 가까운 매장에서 빽다방 신메뉴를 만나 보실 수 있습니다.
+          </p>
+          <button class="btn"><a href="#">메뉴더보기</a></button>
+        </div>
+      </section>
+    
+      <section id="story" class="section">
+        <div class="story-inner">
+          <div class="story-text">
+            <p>자연이 키운 커피</p>
+            <h2>PAIK'S COFFEE STORY</h2>
+            <p>빽다방에서 만나는 고품질의 커피</p>
+            <p>
+              산지의 특징이 명확하고, 향미가 뛰어나며, 극소량만 생산되는
+              최고등급의 스페셜티 커피 원두를 활용하여 블렌딩했습니다.
+            </p>
+            <div class="story-box">
+              <span>*스폐셜티 커피란?</span>
+              <br />
+              <p>
+                미국 스페셜티 커피 협회(SCAA)의 평가에서 80점 이상을 받은
+                우수등급의 커피입니다.
+              </p>
+            </div>
+            <button class="btn"><a href="#">커피이야기</a></button>
+          </div>
+          <img src="./images/story_img01.jpg" alt="커피원두 이미지" />
+        </div>
+      </section>
+
+      <section id="store" class="section">
+        <div class="store-inner">
+          <p>빽다방 소식</p>
+          <h2>PAIK'S EVENT</h2>
+          <ul class="event">
+            <li class="eventlist">
+              <a href="#">
+                <img
+                  src="./images/이벤트-페이지_햄뿡_0522.jpg"
+                  alt="이벤트-페이지_햄뿡"
+                />
+                <h4>여름메뉴 선착순 1천원 할인!</h4>
+                <span>2023-06-01 ~ 2023-08-31</span>
+              </a>
+            </li>
+
+            <li class="eventlist">
+              <a href="#">
+                <img
+                  src="./images/이벤트-페이지_빽다방_패스오더.png"
+                  alt="이벤트-페이지_빽다방_패스오더"
+                />
+                <h4>패스오더 주문시 아메리카노 100원!</h4>
+                <span>2023-06-01 ~ 2023-08-31</span>
+              </a>
+            </li>
+
+            <li class="eventlist">
+              <a href="#">
+                <img
+                  src="./images/이벤트-페이지210817_빽다방_버튼_상세.png"
+                  alt="이벤트-페이지_빽다방_페이백"
+                />
+                <h4>티머니 결제시 3천원 캐시백!</h4>
+                <span>2023-06-01 ~ 2023-08-31</span>
+              </a>
+            </li>
+          </ul>
+          <p>전체 매장 및 각 매장에서 다양한 이벤트가 진행중 입니다.</p>
+          <button class="btn"><a href="#">이벤트 더보기</a></button>
+        </div>
+      </section>
+     
+      <footer class="section">
+        <div class="copyRight-inner">
+          <div class="flogo">
+            <img src="./images/flogo 2.png" alt="더본코리아 로고" />
+          </div>
+          <p>(주)더본코리아</p>
+          <p>사업자등록번호 211-86-00870</p>
+          <p>대표이사 : 백종원</p>
+          <p>주소 : 서울특별시</p>
+          <p>팩스 : 02-511-3864</p>
+          <p>본사 대표전화 : 02-549-3864</p>
+          <p>가맹상담전화 : 02-3447-0410</p>
+          <p>고객센터 : 1544-2360</p>
+          <p>COPYRIGHT&copy;</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/page.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          // nextEl: ".swiper-button-next",
+          // prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 0.5,
+        spaceBetween: 10,
+        centeredSlides: true,
+        preventClicks: true,
+        loop: false,
+        pagination: {
+          // 호출(pager) 여부
+          el: ".swiper-pagination", //버튼을 담을 태그 설정
+          clickable: true, // 버튼 클릭 여부
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1, //브라우저가 768보다 클 때
+            spaceBetween: 10,
+          },
+        },
+      });
+      
+    </script>
+  </body>
+</html>
